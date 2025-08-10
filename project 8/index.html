@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERDANT | Ethical Fashion</title>
+    <style>
+        /* Sustainable Fashion Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f7;
+            color: #2a3d45;
+        }
+        
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #4a7c59;
+        }
+        
+        .tagline {
+            font-style: italic;
+            color: #7a7a7a;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #2a3d45;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+        
+        .hero {
+            height: 80vh;
+            background: url('https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            align-items: flex-end;
+        }
+        
+        .hero-text {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .collection {
+            padding: 80px 40px;
+            text-align: center;
+        }
+        
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        
+        .product-info {
+            padding: 20px;
+        }
+        
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+        
+        .product-info p {
+            color: #7a7a7a;
+            margin-bottom: 15px;
+        }
+        
+        .price {
+            font-weight: 600;
+            color: #4a7c59;
+        }
+        
+        .mission {
+            background-color: #4a7c59;
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #2a3d45;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        @media (max-width: 768px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero {
+                height: 60vh;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>VERDANT</h1>
+        <p class="tagline">Sustainable Style for the Conscious Consumer</p>
+        <nav>
+            <a href="#">Shop</a>
+            <a href="#">Materials</a>
+            <a href="#">Our Story</a>
+            <a href="#">Journal</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    <div class="hero">
+        <div class="hero-text">
+            <h2>The Autumn Collection</h2>
+            <p>Now available in 100% organic fabrics</p>
+        </div>
+    </div>
+    
+    <div class="collection">
+        <h2>FEATURED PRODUCTS</h2>
+        <p>Handcrafted using eco-friendly materials</p>
+        
+        <div class="products">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Organic Cotton Dress">
+                <div class="product-info">
+                    <h3>Linen Wrap Dress</h3>
+                    <p>Made with 100% organic European flax</p>
+                    <p class="price">$148</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Recycled Wool Coat">
+                <div class="product-info">
+                    <h3>Recycled Wool Coat</h3>
+                    <p>Made from post-consumer textiles</p>
+                    <p class="price">$225</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bamboo Fiber Top">
+                <div class="product-info">
+                    <h3>Bamboo Fiber Blouse</h3>
+                    <p>Naturally antimicrobial and breathable</p>
+                    <p class="price">$98</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mission">
+        <h2>OUR SUSTAINABILITY PROMISE</h2>
+        <p>We commit to 100% traceable supply chains and carbon-neutral shipping by 2024.</p>
+        <p>Every garment is made with respect for people and planet.</p>
+    </div>
+    
+    <footer>
+        <p>Join our movement for responsible fashion</p>
+        <div class="footer-links">
+            <a href="#">About</a>
+            <a href="#">Ethics</a>
+            <a href="#">Careers</a>
+            <a href="#">FAQ</a>
+        </div>
+        <p>© 2023 Verdant Sustainable Apparel</p>
+    </footer>
+</body>
+</html>
